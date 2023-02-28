@@ -1,9 +1,7 @@
-const fs = require("fs");
-const path = require('path');
 const inquirer = require("inquirer");
+const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// array of questions for user
 const questions = [
   {
     type: "input",
@@ -69,18 +67,25 @@ const questions = [
     type: "list",
     name: "license",
     message: "Which license would you like to use for your project?",
-    choices: ["MIT License", "Apache License", "GNU General Public License", "None"],
+    choices: ["MIT", "Apache", "GNU General Public", "None"],
   },
 ];
 
-// function to write README file
-function writeToFile(fileName, data) {
+function writeDataDynamically(fileName, answers) {
+  fs.writeFile(fileName, answers, function (err) {
+    if (err) {
+      return console.error("Error!");
+    } else {
+      return console.log("Success!");
+    }
+  });
 }
 
-// function to initialize program
 function init() {
-
+  inquirer.prompt(questions).then((answers) => {
+    const markdown = generateMarkdown(answers);
+    writeDataDynamically("README.md", markdown);
+  });
 }
 
-// function call to initialize program
 init();
