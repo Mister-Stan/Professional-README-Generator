@@ -38,13 +38,7 @@ const questions = [
     name: "tests",
     message: "Please provide testing instructions:"
   },
-
-  {
-    type: "input",
-    name: "build",
-    message: "What tehnologies have you used to build this project?"
-  },
-
+ 
   {
     type: "input",
     name: "github",
@@ -56,13 +50,7 @@ const questions = [
     name: "email",
     message: "Please provide your email adrress:"
   },
-
-  {
-    type: "input",
-    name: "twitter",
-    message: "Please provide your Twitter username:"
-  },
-  
+ 
   {
     type: "list",
     name: "license",
