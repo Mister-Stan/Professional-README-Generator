@@ -1,8 +1,8 @@
-# dsadassda
+# README Generator
   
 
   ## Description
-  dadadas
+  A command-line application that dynamically generates a README.md file
 
   ## Table of Contents
   * [Installation](#installation)
@@ -13,19 +13,19 @@
   * [Questions](#questions)
 
   ## Installation
-  dfssd
+  Run `npm install` into the terminal and then `node index.js `
 
   ## Usage
-  safsa
+  Answer the prompts (questions) to generate the README file
 
   ## Contributing
-  safsasa
+  Contributions are welcome! Please fork this repo and submit a pull request!
 
   ## Tests
-  fsasafa
+  Run `npm test` into the terminal to test the app
 
   ## License
   This project is licensed under the MIT license.
 
   ## Questions
-  If you have any questions, please feel free to contact me at sfdasf. You can also find more of my work at [sdfsadfsa](https://github.com/sdfsadfsa/).
+  If you have any questions, please feel free to contact me at lucianstan87@yahoo.com. You can also find more of my work at [mister-stan](https://github.com/mister-stan/).
